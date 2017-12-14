@@ -1,0 +1,41 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	border: 1px solid #c3b693;
+	margin: 5px;
+}
+.header{
+	background-color: #b3b3b3;
+
+}
+.content{
+	background-color: #cccccc;
+}
+.footer{
+	background-color: #fefa9a;
+}
+.dimension{
+	font-weight: bold;
+}
+
+
+@media only screen and (max-width: 480px){
+	.footer .device:after{content: 'Phone: Width '}
+	.footer .dimension:after{content: 'less than or equal to 480px'}
+
+}
+@media only screen and (min-width: 481px){
+	.footer .device:after{content: 'Tablet: Width '}
+	.footer .dimension:after{content: 'between 481px and 1023px'}
+	
+}
+@media only screen and (min-width: 1024px){
+	.footer .device:after{content: 'Desktop: Width '}
+	.footer .dimension:after{content: 'greater than or equal to 1024px'}
+	myfunction();
+
+
+}
+	
